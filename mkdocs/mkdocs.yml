@@ -1,0 +1,81 @@
+
+# title: Template MkDocs configuration file for a subsite at code.kx.com
+# author: stephen@kx.com
+# date: February 2021
+copyright: "© 2021 Kx Systems, Inc. KX® and kdb+ are registered trademarks of Kx Systems, Inc., a subsidiary of First Derivatives plc."
+
+# The Docker container exposes port 8000
+# Script run.sh lets you select on which port that is exposed on your local machine
+dev_addr: '0.0.0.0:8000'
+
+docs_dir: 'docs'
+
+extra_css:
+  - 'stylesheets/2021.css'
+  - 'stylesheets/prism.css'
+
+extra_javascript:
+  - 'scripts/prism.js'
+  - 'scripts/theme.js'
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - extra
+  - meta
+  - pymdownx.arithmatex
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.tabbed
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+
+# Plugins
+# plugins:
+#   - search
+#   - mkpdfs:
+#       company: Kx Systems Inc.
+#       author: Kx Systems Inc.
+#       toc_title: Table of Contents
+#       toc_position: none
+#       design: mkpdfs_mkdocs/design/report.css
+
+remote_branch: ''
+repo_name: 'FIXME'
+repo_url: ''
+
+site_author: 'Kx Systems Inc, a subsidiary of First Derivatives plc'
+site_description: 'FIXME The description a search engine will expose in its results'
+site_dir: 'site'
+site_name: 'FIXME My KX subsite'
+site_url: ''
+
+theme: 
+  favicon: 'favicon.ico'
+  # features:
+  #   - navigation.tabs
+  font: false
+  name: 'material'
+  language: en
+  logo: 'img/kx.png'
+  palette: 
+    accent: 'pink'
+    primary: 'black'
+    scheme: default
+  static_templates:
+    - 404.html
+
+use_directory_urls: true
+
+# FIXME your nav here
+# nav: 
+#   - Home: index.md
+#   ...
+#   - Kx Systems: 'https://kx.com'
+#   - kdb+ and q: "https://code.kx.com/q"
