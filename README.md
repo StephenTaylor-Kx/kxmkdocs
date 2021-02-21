@@ -7,6 +7,10 @@ This repo is a template for a MkDocs instance for such a subsite.
 
 It uses the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme, and font files from [Swiss Typefaces](https://swisstypefaces.com), licensed for use only on kx.com. 
 
+The `run.sh` and `build.sh` scripts use MkDocs within a Docker container.
+
+
+
 
 Requirements
 ------------
@@ -62,7 +66,7 @@ To see the result of edits to the configuration file, terminate and restart the 
 in which case the entire site is recompiled after each change is saved.
 
 See the Material for MkDocs [documentation](https://squidfunk.github.io/mkdocs-material/) for details of the various extensions to Markdown available. 
-The site makes extensive use of admonitions, FontAwesome icons and labelled code fences. 
+The site makes extensive use of admonitions, [FontAwesome](https://fontawesome.com/) icons and labelled code fences. 
 The source code for code.kx.com/q is at [github.com/kxsys/docs](https://github.com/kxsys/docs) and contains many examples of these in use. 
 
 
@@ -72,7 +76,7 @@ Building the subsite
 The Librarian will build the HTML for code.kx.com from your source. 
 
 The `build.sh` script will compile a site you can ship to clients. 
-The resulting site (by default in your `site` subfolder`) is self-contained and should display correctly on an isolated machine. 
+The resulting site (by default in your `site` subfolder) is self-contained and should display correctly on an isolated machine. 
 
 
 Queries to [librarian@kx.com](mailto:librarian@kx.com). 
