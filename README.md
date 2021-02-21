@@ -61,7 +61,7 @@ To see the result of edits to the configuration file, terminate and restart the 
 
 in which case the entire site is recompiled after each change is saved.
 
-See the Material for MkDocs [documentation]](https://squidfunk.github.io/mkdocs-material/) for details of the various extensions to Markdown available. 
+See the Material for MkDocs [documentation](https://squidfunk.github.io/mkdocs-material/) for details of the various extensions to Markdown available. 
 The site makes extensive use of admonitions, FontAwesome icons and labelled code fences. 
 The source code for code.kx.com/q is at [github.com/kxsys/docs](https://github.com/kxsys/docs) and contains many examples of these in use. 
 
