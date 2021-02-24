@@ -75,7 +75,7 @@ body, input,
 article h1, article h2, article h3, 
 .wp-author, #wp-brand, .publications, .admonition-title,
 article details>summary {
-  font-family: 'EuclidSquare', 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif;
+  font-family: 'EuclidSquare', 'Segoe UI', -apple-system, Cantarell, Helvetica, Arial, sans-serif;
 }
 
 .md-typeset code,
