@@ -1,11 +1,8 @@
 FROM python:3.9-slim-buster
 
+# All containers expose port 8000
+# Script run.sh maps 8000 to the localhost port for your live preview
 EXPOSE 8000
 
-# Git is required for the git-revision-date plgin
-#RUN apk add git
-
-RUN pip install --no-cache-dir mkdocs &&\
-    pip install --no-cache-dir mkdocs-material &&\
-#   pip install --no-cache-dir mkdocs-git-revision-date-localized-plugin &&\
-    pip install --no-cache-dir pymdown-extensions
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
