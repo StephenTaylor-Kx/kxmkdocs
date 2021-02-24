@@ -1,7 +1,7 @@
 /*
 	Title: Common extra CSS for code.kx.com in MkDocs
 	Author: stephen@kx.com
-	Version: 2021.02.02 *Cloud Edition LOCAL FONTS*
+	Version: 2021.02.24
  */
 
 /* countermand MkDocs insertion of href attribute after link anchor
@@ -43,24 +43,31 @@ a.md-nav__link.md-nav__link--active {
 
 /* type
 --------------------------------------------- */
+/*
+Content hosted on code.kx.com will be displayed in Euclid.
+Content hosted elsewhere will not, unless the font is installed on the user’s machine.
+The Segoe UI secondary font will be used only if installed on the user’s machine:
+Microsoft permits neither hosting at code.kx.com nor distribution. 
+The most probable outcome for a site hosted off code.kx.com is display with the user’s installed fonts.
+*/
 @font-face {
   font-family: 'EuclidSquare';
-  src: url('../fonts/EuclidSquare-Regular-WebS.woff2') format('woff2'),
-       url('../fonts/EuclidSquare-Regular-WebS.woff')  format('woff');
+  src: url('https://code.kx.com/fonts/EuclidSquare-Regular-WebS.woff2') format('woff2'),
+       url('https://code.kx.com/fonts/EuclidSquare-Regular-WebS.woff')  format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'EuclidSquare';
-  src: url('../fonts/EuclidSquare-RegularItalic-WebS.woff2') format('woff2'),
-       url('../fonts/EuclidSquare-RegularItalic-WebS.woff')  format('woff');
+  src: url('https://code.kx.com/fonts/EuclidSquare-RegularItalic-WebS.woff2') format('woff2'),
+       url('https://code.kx.com/fonts/EuclidSquare-RegularItalic-WebS.woff')  format('woff');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: 'EuclidSquare';
-  src: url('../fonts/EuclidSquare-Bold-WebS.woff2') format('woff2'),
-       url('../fonts/EuclidSquare-Bold-WebS.woff')  format('woff');
+  src: url('https://code.kx.com/fonts/EuclidSquare-Bold-WebS.woff2') format('woff2'),
+       url('https://code.kx.com/fonts/EuclidSquare-Bold-WebS.woff')  format('woff');
   font-weight: bold;
   font-style: normal;
 }
@@ -68,7 +75,7 @@ body, input,
 article h1, article h2, article h3, 
 .wp-author, #wp-brand, .publications, .admonition-title,
 article details>summary {
-  font-family: 'EuclidSquare', -apple-system, Helvetica, Arial, sans-serif;
+  font-family: 'EuclidSquare', 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif;
 }
 
 .md-typeset code,
