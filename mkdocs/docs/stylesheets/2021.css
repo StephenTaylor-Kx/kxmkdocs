@@ -52,25 +52,27 @@ The most probable outcome for a site hosted off code.kx.com is display with the 
 */
 @font-face {
   font-family: 'EuclidSquare';
-  src: url('https://code.kx.com/fonts/EuclidSquare-Regular-WebS.woff2') format('woff2'),
+  src: local('Euclid Square'),
+       url('https://code.kx.com/fonts/EuclidSquare-Regular-WebS.woff2') format('woff2'),
        url('https://code.kx.com/fonts/EuclidSquare-Regular-WebS.woff')  format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'EuclidSquare';
-  src: url('https://code.kx.com/fonts/EuclidSquare-RegularItalic-WebS.woff2') format('woff2'),
+  src: local('Euclid Square'),
+       url('https://code.kx.com/fonts/EuclidSquare-RegularItalic-WebS.woff2') format('woff2'),
        url('https://code.kx.com/fonts/EuclidSquare-RegularItalic-WebS.woff')  format('woff');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: 'EuclidSquare';
-  src: url('https://code.kx.com/fonts/EuclidSquare-Bold-WebS.woff2') format('woff2'),
+  src: local('Euclid Square'),
+       url('https://code.kx.com/fonts/EuclidSquare-Bold-WebS.woff2') format('woff2'),
        url('https://code.kx.com/fonts/EuclidSquare-Bold-WebS.woff')  format('woff');
   font-weight: bold;
   font-style: normal;
-}
 body, input, 
 article h1, article h2, article h3, 
 .wp-author, #wp-brand, .publications, .admonition-title,
