@@ -16,7 +16,6 @@ extra_css:
 
 extra_javascript:
   - 'scripts/prism.js'
-  - 'scripts/theme.js'
 
 markdown_extensions:
   - admonition
@@ -63,9 +62,9 @@ theme:
   font: false
   name: 'material'
   language: en
-  logo: 'img/kx.png'
+  logo: 'img/kx.svg'
   palette: 
-    accent: 'pink'
+    accent: 'blue'
     primary: 'black'
     scheme: default
   static_templates:
@@ -74,8 +73,7 @@ theme:
 use_directory_urls: true
 
 # FIXME your nav here
-# nav: 
-#   - Home: index.md
-#   ...
-#   - Kx Systems: 'https://kx.com'
-#   - kdb+ and q: "https://code.kx.com/q"
+nav: 
+  - Home: index.md
+  - Kx Systems: 'https://kx.com'
+  - kdb+ and q: "https://code.kx.com/q"
