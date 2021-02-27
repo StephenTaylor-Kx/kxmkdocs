@@ -139,18 +139,12 @@ article details>summary {
 --------------------------------------------- */
 .md-typeset code[class*="language-"],
 .md-typeset pre[class*="language-"] {
-  background-color: #eee7d4;
+  background-color: #f4edda;
 	font-size: .9em;
 }
 
-.md-typeset pre code[class*="language-json"],
-.md-typeset pre code[class*="language-js"],
-.md-typeset pre code[class*="language-handlebars"],
 .md-typeset pre code[class*="language-q"],
 .md-typeset pre code[class*="language-txt"],
-.md-typeset pre[class*="language-json"],
-.md-typeset pre[class*="language-js"],
-.md-typeset pre[class*="language-handlebars"],
 .md-typeset pre[class*="language-q"],
 .md-typeset pre[class*="language-txt"] {
   background-color: #fdf6e3;
