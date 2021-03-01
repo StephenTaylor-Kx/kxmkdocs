@@ -12,7 +12,7 @@
   }
 }
 
- /* palette assumes MkDocs theme accent/primary is pink/black
+ /* palette assumes MkDocs theme accent/primary is blue/black
 --------------------------------------------- */
 [data-md-color-primary=black] .md-header,
 [data-md-color-primary=black] .md-container .md-hero,
@@ -21,15 +21,40 @@
 }
  /* override accent background colour on repo download and star buttons */
 .scrollable .wrapper .repo a {
- 	background: #F23A66;
+ 	background: hsla(217, 100%, 40%, 1);
 }
- /* override theme link colors */
-[data-md-color-primary=pink] .md-typeset a {
- 	color: #0061FF; 
+
+/* KX Blue 2021 #0061FF hsl(217, 100%, 50%) */
+[data-md-color-primary=black] {
+  --md-typeset-a-color: hsla(217, 100%, 40%, 1);
 }
-[data-md-color-primary=pink] .md-typeset a:hover,
-a.md-nav__link.md-nav__link--active {
-  color: #F23A66;
+
+.md-typeset a {
+  color: hsla(217, 100%, 40%, 1);
+}
+
+[data-md-color-accent=blue] {
+  --md-accent-fg-color: hsla(217, 100%, 57%, 1);
+  --md-accent-fg-color--transparent: hsla(217, 100%, 97%, 0.1);
+}
+
+/* KX Black 2021 #101820 hsl(210, 33%, 9%) */
+[data-md-color-primary=black] {
+  --md-primary-fg-color: hsl(210, 33%, 9%);
+}
+
+[data-md-color-primary=black] .md-header {
+  background-color: hsl(210, 33%, 9%);
+}
+
+/* admonination use kx blue colors */ 
+.md-typeset .note>.admonition-title, .md-typeset .note>summary {
+  background-color: rgba(82,148,254,.1);
+  border-color: #5294fe;
+}
+
+.md-typeset .admonition.note, .md-typeset details.note {
+  border-color: #5294fe;
 }
 
 /* TEXT HIGHLIGHTING - KX Yellow: #FFC300 */
@@ -73,6 +98,8 @@ The most probable outcome for a site hosted off code.kx.com is display with the 
        url('https://code.kx.com/fonts/EuclidSquare-Bold-WebS.woff')  format('woff');
   font-weight: bold;
   font-style: normal;
+}
+
 body, input, 
 article h1, article h2, article h3, 
 .wp-author, #wp-brand, .publications, .admonition-title,
@@ -112,14 +139,20 @@ article details>summary {
 --------------------------------------------- */
 .md-typeset code[class*="language-"],
 .md-typeset pre[class*="language-"] {
-  background-color: #eee7d4;
+  background-color: #f4edda;
 	font-size: .9em;
 }
+
 .md-typeset pre code[class*="language-q"],
 .md-typeset pre code[class*="language-txt"],
 .md-typeset pre[class*="language-q"],
 .md-typeset pre[class*="language-txt"] {
   background-color: #fdf6e3;
+}
+
+/* less padding on code blocks */
+.md-typeset pre > code {
+	padding: 0;
 }
 
 /* match Prism code blocks */
@@ -154,7 +187,7 @@ div.typewriter a {
   background-color: #fdf6e3;
 }
 div.typewriter strong {
-  font-weight: : 800;
+  font-weight: 800;
 }
 
  /* No background in code block within admonition */
