@@ -1,64 +1,38 @@
-# Welcome to MkDocs
+---
+title: Template for a KX documentation subsite
+description: The KX documentation site consists of static HTML subsites generated from MkDocs instances. This is a template for a subsite.
+authors: 
+    - George Kelly
+    - Stephen Taylor
+date: March 2021
+---
+# Template for a KX documentation subsite
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-Or see wunnerful stuff at [code.kx.com](https://code.kx.com/)
+The KX documentation site [code.kx.com](https://code.kx.com) consists of static HTML subsites generated from [MkDocs](https://www.mkdocs.org) instances.
 
-## Commands
+This is a template for such a site, with examples of Markdown features used in the site.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+It contains guidance and examples to help you draft your own subsite.
+Study the content and the source files for it, then replace with your own.
+
 
 ## Project layout
 
-    mkdocs.yml    # The configuration file.
+    mkdocs.yml    # Configuration file
+    site/         # Container for generated HTML
     docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-
-## Code Samples
+        index.md  # The documentation homepage
+        ...       # Other markdown pages, images and other files
 
 
-Unsupported
-```unsupported
-¯\_(ツ)_/¯
-```
+## Replicated resources
 
+We ship product documentation subsites to licensed customers for hosting on their intranets. 
 
-q
-```q
-b64dec:{c:sum x="=";neg[c]_"c"$raze 1_'256 vs' 64 sv'69,' 0N 4#.Q.b6?x}
-```
+Default browser security settings block such sites from loading resources from our documentation server, so common resources (CSS, JS, SVG, etc) are replicated in this template. 
+([Font files](fonts.md) are an exception.)
 
+Keep your subsite up to date with the latest versions of these resources from this GitHub repo. 
 
-Handlebars
-```handlebars
-<!-- array: ['a', 'b', 'c'] -->
-{{after array 1}}
-<!-- results in: '["c"]' -->
-```
-
-
-Javascript:
-```js
-define(function () {
-    return function (options) {
-        options.el.textContent = "Hello World";
-    }
-});
-```
-
-
-Json:
-```json
-{
-    "id": 10001,
-    "componentName": "Hello",
-    "componentDescription": "Simple component",
-    "size": [400,600],
-    "appKey": "HelloWorld/main",
-    "listViewThumb": "<i class=\"fa fa-fw fa-smile-o\" />"
-},
-```
+Join the KX Slack channel `#mkdocs` for anouncements of updates. 

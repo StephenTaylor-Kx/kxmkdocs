@@ -47,13 +47,13 @@ markdown_extensions:
 #       design: mkpdfs_mkdocs/design/report.css
 
 remote_branch: ''
-repo_name: 'FIXME'
+repo_name: ''
 repo_url: ''
 
 site_author: 'Kx Systems Inc, a subsidiary of First Derivatives plc'
 site_description: 'FIXME The description a search engine will expose in its results'
 site_dir: 'site'
-site_name: 'FIXME My KX subsite'
+site_name: 'My KX subsite'
 site_url: ''
 
 theme: 
@@ -76,5 +76,8 @@ use_directory_urls: true
 # FIXME your nav here
 nav: 
   - Home: index.md
+  - Code and text blocks: code.md
+  - Admonitions: admonitions.md
+  - Fonts: fonts.md
   - Kx Systems: 'https://kx.com'
   - kdb+ and q: "https://code.kx.com/q"
