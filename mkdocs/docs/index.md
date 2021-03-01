@@ -1,9 +1,7 @@
 ---
 title: Template for a KX documentation subsite
 description: The KX documentation site consists of static HTML subsites generated from MkDocs instances. This is a template for a subsite.
-authors: 
-    - George Kelly
-    - Stephen Taylor
+author: Stephen Taylor
 date: March 2021
 ---
 # Template for a KX documentation subsite
@@ -20,10 +18,12 @@ Study the content and the source files for it, then replace with your own.
 ## Project layout
 
     mkdocs.yml    # Configuration file
-    site/         # Container for generated HTML
     docs/
         index.md  # The documentation homepage
-        ...       # Other markdown pages, images and other files
+        ...       # Other Markdown pages, images and other files
+    serve.sh      # Script to serve live preview from local port
+    build.sh      # Script to generate static HTML site from docs/
+    site/         # Container for generated HTML
 
 
 ## Replicated resources

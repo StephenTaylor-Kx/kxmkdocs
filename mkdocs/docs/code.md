@@ -1,7 +1,9 @@
 ---
 title: Code blocks in a KX documentation subsite
 description: Examples of code and text blocks in a KX documentation subsite
-author: Stephen Taylor
+authors: 
+    - George Kelly
+    - Stephen Taylor
 date: March 2021
 ---
 # Code and text blocks
