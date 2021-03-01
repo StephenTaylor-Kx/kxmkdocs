@@ -15,5 +15,6 @@ opt="--dirtyreload"
 fi
 cmd="mkdocs serve -a '0.0.0.0:8000' $opt";
 
+WD='/mnt/my-docs';
 # -it allows you to terminate with Ctl-c on stdin
-docker run -it --rm -p $1:8000 --mount $mnt --workdir '/mnt/my-docs' $IMAGE /bin/sh -c "$cmd";
+docker run -it --rm -p $1:8000 --mount $mnt --workdir "$WD" $IMAGE /bin/sh -c "$cmd";

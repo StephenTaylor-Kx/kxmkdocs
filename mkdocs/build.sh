@@ -1,11 +1,13 @@
 #!/bin/bash
 # title: Build MkDocs instance in KX Docker image for MkDocs
 # author: stephen@kx.com
-# date: February 2021
+# date: March 2021
 # required: Docker
-# usage: build.sh ~/Projects/kx/code/q
+# usage: ./build.sh 
 
-IMAGE='sjt5jt/kxmkdocs:0.1';
-mnt="type=bind,source=$1,target=/mnt/my-docs";
+IMAGE='sjt5jt/kxmkdocs:0.2';
+CMD="mkdocs build --clean";
+WD="/mnt/my-docs";
+mnt="type=bind,source=$(pwd),target=$WD";
 
-docker run --rm --mount $mnt --workdir '/mnt/my-docs' $IMAGE /bin/sh -c "mkdocs build --clean"
+docker run --rm --mount $mnt --workdir "$WD" $IMAGE /bin/sh -c "$CMD";
